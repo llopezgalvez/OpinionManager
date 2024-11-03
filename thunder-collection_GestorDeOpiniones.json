@@ -1,0 +1,459 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorDeOpiniones",
+    "dateExported": "2024-03-02T17:17:41.443Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "316cc474-7ef3-4bf2-a98f-35a6f9508afa",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-03-02T05:32:27.035Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "fea23be7-3e13-40ef-9610-961d573fa80f",
+            "name": "Publication",
+            "containerId": "",
+            "created": "2024-03-02T05:32:27.036Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "305b24eb-f424-44d3-b08c-0da336b969c7",
+            "name": "Publication Comments",
+            "containerId": "",
+            "created": "2024-03-02T05:32:27.037Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "1dd1b39b-8957-436d-8fc0-8646fcea469a",
+            "name": "Category",
+            "containerId": "",
+            "created": "2024-03-02T05:32:39.556Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "2acdc75f-9770-4788-9fd1-43b6eb4405bb",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "316cc474-7ef3-4bf2-a98f-35a6f9508afa",
+            "name": "Create User",
+            "url": "/user/createUser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-02T05:32:27.035Z",
+            "modified": "2024-03-02T15:28:44.963Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Josue"
+                    },
+                    {
+                        "name": "lastName",
+                        "value": "Noj"
+                    },
+                    {
+                        "name": "mail",
+                        "value": "jnoj-2022065@kinal.edu.gt"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "username",
+                        "value": "jnoj"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "85b3c30a-4c5e-47c0-ac2f-0d0ff639a985",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "316cc474-7ef3-4bf2-a98f-35a6f9508afa",
+            "name": "Login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-02T05:32:27.037Z",
+            "modified": "2024-03-02T16:02:30.317Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "llopez",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "username",
+                        "value": "jnoj"
+                    },
+                    {
+                        "name": "password",
+                        "value": "Lester"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "aa9f9ac5-8699-43e0-8d74-d01409c6b162",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "316cc474-7ef3-4bf2-a98f-35a6f9508afa",
+            "name": "Update User",
+            "url": "/user/updateUser/65e345ac3c1094c81bc37e32",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-02T05:32:27.038Z",
+            "modified": "2024-03-02T15:39:00.958Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNDU0YTNjMTA5NGM4MWJjMzdlMmUiLCJ1c2VybmFtZSI6Imxsb3BleiIsIm5hbWUiOiJMZXN0ZXIiLCJpYXQiOjE3MDkzOTMzNzIsImV4cCI6MTcxMTk4NTM3Mn0.H1ZZg-4uNBptOgBjTdUm3LWY6q2INWvUu7WLq1yqSFk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "oldPassword",
+                        "value": "12345678",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "Lester",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "name",
+                        "value": "Rene",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "phone",
+                        "value": "87654321"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "1ed4d9a6-4f99-44d5-ba69-b938610be957",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "fea23be7-3e13-40ef-9610-961d573fa80f",
+            "name": "Create Publication",
+            "url": "/publication/createPublication",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-02T05:32:27.039Z",
+            "modified": "2024-03-02T16:02:51.535Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNDVhYzNjMTA5NGM4MWJjMzdlMzIiLCJ1c2VybmFtZSI6Impub2oiLCJuYW1lIjoiSm9zdWUiLCJpYXQiOjE3MDkzOTUzNTAsImV4cCI6MTcxMTk4NzM1MH0.j4hKloDdW03ocAAg13UU9twA0Ty3r435_PoWWqCywrU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Guatemala al mundial JOSUE NOJ"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e3497bcd0d87662cde637d"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Guatemala al su primero mundial"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a3671f7f-6bc5-46fb-84ed-1f49d7d11fcf",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "fea23be7-3e13-40ef-9610-961d573fa80f",
+            "name": "List Publications",
+            "url": "/publication/getPublications",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-03-02T05:32:27.040Z",
+            "modified": "2024-03-02T15:48:09.626Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNDVhYzNjMTA5NGM4MWJjMzdlMzIiLCJ1c2VybmFtZSI6Impub2oiLCJuYW1lIjoiSm9zdWUiLCJpYXQiOjE3MDkzOTQ0MDUsImV4cCI6MTcxMTk4NjQwNX0.9hnWMciJz_9ITwGXQvPuAP3I2xMGUC0Zs23palUeGSY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ccf8991a-5701-434c-8fbe-c947736403a9",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "305b24eb-f424-44d3-b08c-0da336b969c7",
+            "name": "Create Comment",
+            "url": "/publicationComment/createComment/65e34dabe09d2ccc375773cf",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-02T05:32:27.041Z",
+            "modified": "2024-03-02T16:05:34.795Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNDVhYzNjMTA5NGM4MWJjMzdlMzIiLCJ1c2VybmFtZSI6Impub2oiLCJuYW1lIjoiSm9zdWUiLCJpYXQiOjE3MDkzOTUzNTAsImV4cCI6MTcxMTk4NzM1MH0.j4hKloDdW03ocAAg13UU9twA0Ty3r435_PoWWqCywrU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comment",
+                        "value": "COMENTARIO DE PRUEBA DE JOSUE NOJ"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "75a30c6d-162a-4d8a-8a59-2be6b3374647",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "fea23be7-3e13-40ef-9610-961d573fa80f",
+            "name": "Update Publication",
+            "url": "/publication/updatePublication/65e34a2bcd0d87662cde6390",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-03-02T05:32:27.042Z",
+            "modified": "2024-03-02T15:55:34.706Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNDVhYzNjMTA5NGM4MWJjMzdlMzIiLCJ1c2VybmFtZSI6Impub2oiLCJuYW1lIjoiSm9zdWUiLCJpYXQiOjE3MDkzOTQ0MDUsImV4cCI6MTcxMTk4NjQwNX0.9hnWMciJz_9ITwGXQvPuAP3I2xMGUC0Zs23palUeGSY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Guatemala se quema",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e2bf799e94c970318f73f0",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "description",
+                        "value": "Otro comentario de prueba"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f4c8aa5a-9bd2-4b86-ab42-3ebe593fd2fb",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "fea23be7-3e13-40ef-9610-961d573fa80f",
+            "name": "Delete Publication",
+            "url": "/publication/deletePublication/65e34a2bcd0d87662cde6390",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-03-02T05:32:27.043Z",
+            "modified": "2024-03-02T16:00:37.484Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNDVhYzNjMTA5NGM4MWJjMzdlMzIiLCJ1c2VybmFtZSI6Impub2oiLCJuYW1lIjoiSm9zdWUiLCJpYXQiOjE3MDkzOTQ0MDUsImV4cCI6MTcxMTk4NjQwNX0.9hnWMciJz_9ITwGXQvPuAP3I2xMGUC0Zs23palUeGSY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6d10c022-8388-453b-a5ae-c4782d0d06d5",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "305b24eb-f424-44d3-b08c-0da336b969c7",
+            "name": "Update Comment",
+            "url": "/publicationComment/updateComment/65e34e50e09d2ccc375773fb",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-03-02T05:32:27.044Z",
+            "modified": "2024-03-02T16:08:54.001Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNDVhYzNjMTA5NGM4MWJjMzdlMzIiLCJ1c2VybmFtZSI6Impub2oiLCJuYW1lIjoiSm9zdWUiLCJpYXQiOjE3MDkzOTUzNTAsImV4cCI6MTcxMTk4NzM1MH0.j4hKloDdW03ocAAg13UU9twA0Ty3r435_PoWWqCywrU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comment",
+                        "value": "Se ha modificado el comentario JOSUE NOJ"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c54cc665-9189-41d5-95a8-55454dc585e4",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "305b24eb-f424-44d3-b08c-0da336b969c7",
+            "name": "Delete Comment",
+            "url": "/publicationComment/deleteComment/65e34e50e09d2ccc375773fb",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-03-02T05:32:27.045Z",
+            "modified": "2024-03-02T16:11:12.523Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNDVhYzNjMTA5NGM4MWJjMzdlMzIiLCJ1c2VybmFtZSI6Impub2oiLCJuYW1lIjoiSm9zdWUiLCJpYXQiOjE3MDkzOTUzNTAsImV4cCI6MTcxMTk4NzM1MH0.j4hKloDdW03ocAAg13UU9twA0Ty3r435_PoWWqCywrU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2ebd8e1a-4bda-4e70-aa58-2fd0f6b794ef",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "1dd1b39b-8957-436d-8fc0-8646fcea469a",
+            "name": "Create Category",
+            "url": "/category/createCategory",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-03-02T05:32:47.544Z",
+            "modified": "2024-03-02T15:44:58.566Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNDU0YTNjMTA5NGM4MWJjMzdlMmUiLCJ1c2VybmFtZSI6Imxsb3BleiIsIm5hbWUiOiJSZW5lIiwiaWF0IjoxNzA5MzkzOTg4LCJleHAiOjE3MTE5ODU5ODh9.PUOr3PhLldiv4MluE4Vz9KkF4Fu4gjgadCcb5D2GJTM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCategory",
+                        "value": "Deporte"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Deporte Guatemalteco"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "1c5e2c2a-75dd-49d8-aa11-15102ada8947",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "1dd1b39b-8957-436d-8fc0-8646fcea469a",
+            "name": "Update Category",
+            "url": "/category/updateCategory/65e3486dcd0d87662cde6361",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-03-02T05:49:54.514Z",
+            "modified": "2024-03-02T15:43:23.326Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNDU0YTNjMTA5NGM4MWJjMzdlMmUiLCJ1c2VybmFtZSI6Imxsb3BleiIsIm5hbWUiOiJSZW5lIiwiaWF0IjoxNzA5MzkzOTg4LCJleHAiOjE3MTE5ODU5ODh9.PUOr3PhLldiv4MluE4Vz9KkF4Fu4gjgadCcb5D2GJTM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCategory",
+                        "value": "Deporte"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Deporte Guatemalteco"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c19ab40a-7c45-47eb-9a69-3d5f9f323b21",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "1dd1b39b-8957-436d-8fc0-8646fcea469a",
+            "name": "Delete Category",
+            "url": "/category/deleteCategory/65e3497bcd0d87662cde637d",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-03-02T05:50:00.938Z",
+            "modified": "2024-03-02T16:11:55.060Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNDU0YTNjMTA5NGM4MWJjMzdlMmUiLCJ1c2VybmFtZSI6Imxsb3BleiIsIm5hbWUiOiJSZW5lIiwiaWF0IjoxNzA5MzkzOTg4LCJleHAiOjE3MTE5ODU5ODh9.PUOr3PhLldiv4MluE4Vz9KkF4Fu4gjgadCcb5D2GJTM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "59a68e93-4fdb-4250-9f45-2865017c5ad7",
+            "colId": "372e7a99-f12c-4aeb-a38d-6e402f72e98e",
+            "containerId": "1dd1b39b-8957-436d-8fc0-8646fcea469a",
+            "name": "Get Categories",
+            "url": "/category/getCategories",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-03-02T17:09:18.690Z",
+            "modified": "2024-03-02T17:09:30.158Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
